@@ -1,0 +1,65 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+ plot(MyData
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+R version 4.1.1 (2021-08-10) -- "Kick Things"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Workspace loaded from ~/.RData]
+
+> summary(MyData)
+  OrderDate            Region              Rep           
+ Length:43          Length:43          Length:43         
+ Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character  
+                                                         
+                                                         
+                                                         
+     Item               Units         Unit.Cost         Total          
+ Length:43          Min.   : 2.00   Min.   :  1.29   Length:43         
+ Class :character   1st Qu.:27.50   1st Qu.:  3.99   Class :character  
+ Mode  :character   Median :53.00   Median :  4.99   Mode  :character  
+                    Mean   :49.33   Mean   : 20.31                     
+                    3rd Qu.:74.50   3rd Qu.: 17.99                     
+                    Max.   :96.00   Max.   :275.00                     
+> plot(MyData)
+ b<- 125
+> class(b)
+[1] "numeric"
+> b_ch<-as.character(b)
+> class(b_char)
+[1] "character"
